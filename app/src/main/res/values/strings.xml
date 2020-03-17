@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MovieDB</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="favorites">Favorites</string>
+    <string name="save">Save</string>
+    <string name="connectionProblem">Connection Problem!!!</string>
+    <string name="queryHint">Enter Movie Ttitle</string>
+    <string name="no_results">No results 😓</string>
+    <string name="addToFavorites">Added to Favorites</string>
+    <string name="removeFromFavorites">Removed from Favorites</string>
+</resources>

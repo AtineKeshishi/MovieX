@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/popularMovies">
+
+    <fragment
+        android:id="@+id/popularMovies"
+        android:name="com.example.moviedb.popularMovies.PopularMovies"
+        android:label="fragment_popular_movies"
+        tools:layout="@layout/fragment_popular_movies" >
+        <action
+            android:id="@+id/action_popularMovies_to_movieDetail"
+            app:destination="@id/singleMovie" />
+        <argument
+            android:name="offNav"
+            app:argType="boolean"
+            android:defaultValue="true" />
+        <action
+            android:id="@+id/action_popularMovies_to_favoriteMovies"
+            app:destination="@id/favoriteMovies" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleMovie"
+        android:name="com.example.moviedb.singleMovie.SingleMovie"
+        android:label="fragment_movie_detail"
+        tools:layout="@layout/fragment_movie_detail" >
+        <action
+            android:id="@+id/action_movieDetail_to_popularMovies"
+            app:destination="@id/popularMovies"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/popularMovies"
+            app:popUpToInclusive="false" />
+        <argument android:name="transferMovieId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoriteMovies"
+        android:name="com.example.moviedb.favoriteMovies.FavoriteMoviesList"
+        android:label="fragment_favorite_movies"
+        tools:layout="@layout/fragment_favorite_movies" >
+        <action
+            android:id="@+id/action_favoriteMovies_to_popularMovies"
+            app:destination="@id/popularMovies"
+            app:popUpTo="@id/popularMovies"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="transferMovieId"
+            app:argType="integer" />
+    </fragment>
+</navigation>
