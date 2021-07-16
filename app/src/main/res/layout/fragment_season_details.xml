@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".features.shows.showdetails.seasondetails.SeasonDetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/about" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="100dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header">
+
+            <TextView
+                android:id="@+id/notFound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="20sp"
+                android:visibility="gone"
+                tools:text="@string/not_available" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/prgData"
+                android:layout_width="220dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:elevation="1dp"
+                android:visibility="gone"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loading" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="150dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgSeasonPoster"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerCrop"
+                    tools:src="@drawable/instagram_logo" />
+
+                <TextView
+                    android:id="@+id/txtSeasonOverview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:lineSpacingExtra="8dp"
+                    android:maxLines="6"
+                    android:nestedScrollingEnabled="true"
+                    android:scrollbars="vertical"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="14sp"
+                    tools:text="@string/junkText" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvEpisodeList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/colorPrimary"
+                android:orientation="vertical"
+                android:paddingBottom="4dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="6"
+                tools:listitem="@layout/item_episode" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/movies">
+        <menu>
+            <group
+                android:id="@+id/movieSection"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/popularMovies"
+                    android:icon="@drawable/ic_popular"
+                    android:title="@string/popular" />
+
+                <item
+                    android:id="@+id/topRatedMovies"
+                    android:icon="@drawable/ic_top_rated"
+                    android:title="@string/top_rated" />
+
+                <item
+                    android:id="@+id/nowPlayingMovies"
+                    android:icon="@drawable/ic_now_playing"
+                    android:title="@string/now_playing" />
+
+                <item
+                    android:id="@+id/upcomingMovies"
+                    android:icon="@drawable/ic_upcoming"
+                    android:title="@string/upcoming" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/shows">
+        <menu>
+            <group
+                android:id="@+id/showSection"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/popularShows"
+                    android:icon="@drawable/ic_popular"
+                    android:title="@string/popular" />
+
+                <item
+                    android:id="@+id/onTheAirShows"
+                    android:icon="@drawable/ic_tv"
+                    android:title="@string/on_the_air" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search" />
+</menu>

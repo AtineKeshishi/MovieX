@@ -1,11 +1,54 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryLight</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorBlackTransparent</item>
+        <item name="android:navigationBarColor">@color/colorSecondary</item>
+        <item name="android:textColorSecondary">@color/primaryTextColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <item name="android:listDivider">@color/colorPrimaryLight</item>
+        <item name="android:justificationMode" tools:targetApi="o">inter_word</item>
+    </style>
+
+    <style name="ThemeOverlay.MovieX.Toolbar" parent="">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:textColor">?colorOnPrimary</item>
+        <item name="android:tint">?colorOnPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginStart">13dp</item>
+    </style>
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorWhiteTransparent</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorSecondaryLight</item>
+        <item name="colorControlActivated">@color/colorSecondary</item>
+    </style>
+
+    <style name="CustomBottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_bottom_sheet</item>
     </style>
 
 </resources>

@@ -1,12 +1,94 @@
 <resources>
-    <string name="app_name">MovieDB</string>
+    <string name="app_name">MovieX</string>
+
+    <string name="junkText">A top-level destination is the root, or highest level destination, in a
+        set of hierarchically-related destinations. Top-level destinations do not display an Up
+        button in the top app bar because there is no higher level destination. By default, the
+        start destination of your app is the only top-level destination.</string>
+
+    //Home
+    <string name="trending">Trending</string>
+    <string name="movies">Movies</string>
+    <string name="popular">Popular</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="shows">TV Shows</string>
+    <string name="on_the_air">On The Air</string>
+    <string name="airing_today">Airing Today</string>
+    <string name="genres">Popular Genres</string>
+    <string name="popular_celebrities">Popular Celebrities</string>
+
+    //Movie Detail
+    <string name="overview">Overview</string>
+    <string name="cast">Cast</string>
+    <string name="crew">Crew</string>
+    <string name="homepage">Homepage</string>
+    <string name="homepg">Homepage: %s</string>
+    <string name="budget">Budget: %s</string>
+    <string name="revenue">Revenue: %s</string>
+    <string name="release">Release Date: %s</string>
+    <string name="videos">Videos</string>
+    <string name="trailers">Trailers</string>
+
+    //Similar Movies
+    <string name="no_similar_movie">Couldn\'t find any similar movie to your selected.</string>
+    <string name="similar_movies">Similar Movies</string>
+
+    //Show Detail
+    <string name="seasons">Seasons</string>
+    <string name="episodes">Episodes: %s</string>
+    <string name="network">Network: %s</string>
+    <string name="runtime">Runtime: %s</string>
+    <string name="first_air_date">First Air Date: %s</string>
+    <string name="countries">Production Countries: %s</string>
+    <string name="languages">Languages: %s</string>
+    <string name="about">About</string>
+    <string name="release_info">Release Information</string>
+    <string name="first_air">First air date: %s</string>
+    <string name="last_air">Last air date: %s</string>
+    <string name="air_date">Air date: %s</string>
+    <string name="season_count">No. of seasons: %s</string>
+    <string name="guest_stars">Guest Stars</string>
+    <string name="no_overview">No overview available.</string>
+
+    // Links
+    <string name="image_link">https://image.tmdb.org/t/p/w342%s</string>
+    <string name="youtube_link">https://www.youtube.com/watch?v=%s</string>
+    <string name="imdb_link">https://www.imdb.com/name/%s</string>
+    <string name="facebook_link">https://www.facebook.com/%s</string>
+    <string name="instagram_link">https://www.instagram.com/%s</string>
+    <string name="twitter_link">https://twitter.com/%s</string>
+
+    //Search
     <string name="search">Search</string>
-    <string name="home">Home</string>
-    <string name="favorites">Favorites</string>
-    <string name="save">Save</string>
-    <string name="connectionProblem">Connection Problem!!!</string>
-    <string name="queryHint">Enter Movie Ttitle</string>
-    <string name="no_results">No results 😓</string>
-    <string name="addToFavorites">Added to Favorites</string>
-    <string name="removeFromFavorites">Removed from Favorites</string>
+    <string name="no_results">No results found.</string>
+    <string name="no_results_txt">We couldn\'t find any item matching \n your search</string>
+    <string name="unknown">Unknown </string>
+    <string name="start_search">Search your favorite movie, tv-show, \n or celebrity</string>
+    <string name="not_available">N/A</string>
+    <string name="not_available2">Not available</string>
+    <string name="info_not_available">Information is not available.</string>
+
+
+    //Celebrity
+    <string name="biography">Biography</string>
+    <string name="birthday"><b>Born:</b> %s</string>
+    <string name="death">Death: %s</string>
+    <string name="occupation">Known for: %s</string>
+    <string name="age">age \t%s</string>
+    <string name="creator">Created by</string>
+    <string name="image">Images</string>
+    <string name="popularity">Popularity: %s</string>
+    <string name="no_account">There is no account for %s</string>
+
+
+    // Error
+    <string name="connection_problem">Something went wrong,\n Please check your internet connection.</string>
+    <string name="check_internet">Please check your internet connection.</string>
+    <string name="something_wrong">Something went wrong.</string>
+    <string name="error_404">The resource you requested could not be found.</string>
+    <string name="error_401">Invalid API key: You must be granted a valid key.</string>
+    <string name="try_again">Try Again</string>
+    <string name="oops">Oops!!</string>
 </resources>
