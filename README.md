@@ -1,5 +1,5 @@
 # MovieX
- MovieX is a sample Android project using The Movie DB API based on MVVM architecture. 
+ MovieX is a sample Android project using The Movie DB API.
  
  # Tech Stack
  * Kotlin
